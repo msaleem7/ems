@@ -19,6 +19,7 @@
 class Event < ApplicationRecord
   belongs_to :org
   has_many :ticket_types
+  has_many :tickets, through: :ticket_types
 
   validates :name, presence: true
   validates :capacity, presence: true, numericality: true
