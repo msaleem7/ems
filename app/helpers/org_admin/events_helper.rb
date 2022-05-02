@@ -1,0 +1,2 @@
+module OrgAdmin::EventsHelper
+end
